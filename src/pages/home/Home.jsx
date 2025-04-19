@@ -3,7 +3,7 @@ import HomeCrousal from './HomeCrousal'
 import "./Home.css";
 import HomeSection from "./HomeSection"
 import HomeNavbar from '../../header/HomeNavbar';
-import TaxCalculator from '../../components/TaxCalculator/TaxCalculator';
+import TaxCalculator from '../../components/taxCalculator/TaxCalculator';
 import WhyUs from './WhyUs';
 import ItemCard from "../../components/itemCard/ItemCard";
 import UserForm from '../../components/userForm/UserForm';
