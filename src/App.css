@@ -1,0 +1,137 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+.mainColor{
+  color: #9966ff;
+}
+.secondMainColor{
+  color: #0a2540;
+}
+.secondBgMainColor{
+  background-color: #0a2540;
+}
+
+.equalSizing{
+  font-size:1rem;
+}
+
+.bgMainColor{
+  background-color: #9966ff;
+}
+
+body{
+  background-color: #f6f7f9;
+  font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.thirdMainColor{
+  color: #91B5D7;
+}
+
+
+
+.genericButtons{
+  color:white;
+  background-color: #9966ff;
+  text-decoration:none;
+}
+
+.genericButtons:hover, .genericButtons:active{
+  background-color:rgb(133, 77, 244);
+  color:white;
+  text-decoration:none;
+}
+
+.para{
+  color:rgb(109, 108, 108);
+
+}
+
+section{
+  max-width:1350px;
+}
+
+
+.mainContainer{
+  padding:0 100px;
+}
+
+
+@media (max-width:1400px){
+  .mainContainer{
+    padding:0 80px;
+  }
+}
+@media (max-width:1200px){
+  .mainContainer{
+    padding:0 60px;
+  }
+}@media (max-width:992px){
+  .mainContainer{
+    padding:0 50px;
+  }
+}
+@media (max-width:768px){
+  .mainContainer{
+    padding:0 40px;
+  }
+}
+
+@media (max-width:576px){
+  .mainContainer{
+    padding:0 30px;
+  }
+}
+
+@media (max-width:420px){
+  .mainContainer{
+    padding:0 23px;
+  }
+}

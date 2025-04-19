@@ -1,0 +1,78 @@
+/* Container to limit the height and overflow */
+.bank-logos-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    /* background-color: #ffffff00; */
+    /* Light background to contrast logos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 10px;
+
+    /* Rounded corners */
+}
+
+.bank-logos-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+
+
+.bank-logos {
+    display: flex;
+    animation: scroll-left 80s linear infinite;
+    white-space: nowrap;
+    /* Adjust the width to be large enough for consistent scrolling */
+    width: calc(200%);
+    /* Adjust as necessary based on the number of logos */
+}
+
+/* Duplicate logos for consistent scrolling */
+.bank-logos img {
+    display: inline-block;
+    /* Ensure all logos are treated equally */
+}
+
+/* Ensure that the logos fit into the bank-logos element */
+.bank-logos-wrapper {
+    width: max-content;
+    /* overflow: hidden; */
+    /* Hide overflowing content */
+}
+
+.bank-logo {
+    height: 36px;
+    margin: 5px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+
+}
+
+@media (max-width: 760px) {
+    .bank-logo {
+        height: 32px;
+        margin: 4px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bank-logo {
+        height: 28px;
+        margin: 4px 16px;
+    }
+}

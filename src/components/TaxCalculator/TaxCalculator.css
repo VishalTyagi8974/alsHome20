@@ -1,0 +1,13 @@
+.mobile-screen {
+    width: 270px;
+    color:black;
+    height: 500px;
+    border:7px solid #00000011;
+    background-color:white;
+    padding: 20px;
+    border-radius:30px;
+    margin-bottom: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

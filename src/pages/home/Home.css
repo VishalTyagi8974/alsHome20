@@ -1,0 +1,85 @@
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Gradient only on home page's hero+navbar */
+  .gradBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #7F00FF, rgb(174, 0, 255), rgb(14, 130, 212), rgba(0, 255, 26, 0.98));
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 0, 100% 200px, 0 400px);
+  }
+
+  .canvasSize{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height: 100vh;
+      z-index: -1;
+      clip-path: polygon(0 0, 100% 0, 100% 200px, 0 400px);
+      overflow: hidden,
+  }
+  
+  @media (max-width:768px){
+    .gradBg {
+      clip-path: polygon(0 0, 100% 0, 100% 150px, 0 300px);
+    }
+    .canvasSize{
+      clip-path: polygon(0 0, 100% 0, 100% 150px, 0 300px);
+    }
+  }
+
+  /* Hero section wrapper */
+  .hero-section {
+    position: relative;
+    height: content;
+    overflow: hidden;
+  }
+  
+  /* Canvas bubble layer */
+  .gradient-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    cclip-path: polygon(0 0, 100% 0, 100% 40%, 0 70%);
+  }
+  
+  .gradient-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: blur(60px);
+    opacity: 0.8;
+  }
+  
+  /* Animate gradient */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Swiper pagination bullets (for white theme) */
+  .swiper-pagination-bullet {
+    background: white;
+  }
+  .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+  }
+  

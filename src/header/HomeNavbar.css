@@ -1,0 +1,168 @@
+
+/* Navbar styles */
+.navbar {
+    background-color:#FFFFFF15;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* General styling for route links */
+
+.nav-link{
+    color:white;
+    font-size:0.9rem;
+    font-weight:600;
+}
+
+
+
+/* Active state: when the route matches the current path */
+.nav-link:hover {
+    color: #ffffff99!important;
+    
+}
+.nav-item.show{
+    color:white;
+}
+
+
+
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #ffffff;
+    border:none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #ebedf3;
+    
+    text-decoration: none;
+}
+
+.dropdown-item:active {
+    border: 2px solid gray;
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-right: 0;
+    }
+
+    .btn-outline-success {
+        margin-top: 0.5rem;
+    }
+}
+
+.dropdown-item {
+    color: #0a2540;
+    font-weight: 600;
+    padding: 0.5em 0.4em ;
+    margin: 0.5em 0;
+    border-radius: 12px;
+    font-size:0.9rem;
+    
+
+}
+
+.nav-item {
+    margin-right: 1.2em;
+    margin-bottom: 0;
+
+}
+
+
+.dropdown-item:hover li {
+    text-decoration: none;
+}
+
+.animate__faster {
+    animation-duration: 0.04s;
+    /* Speed up the animation to 0.3 seconds */
+}
+
+
+.dropdown-menu {
+    padding: 1em;
+
+}
+
+
+.dropLinks {
+    color: #000000aa;
+}
+
+.dropLinks:hover {
+    color: #000000;
+}
+
+#navbarDropDownSpace {
+    margin-left: 400px;
+}
+
+@media (max-width:1200px) {
+
+    #navbarDropDownSpace {
+        margin-left: 100px;
+    }
+
+}
+
+.contactButton:hover, .contactButton:active{
+    background-color:#0a2540;
+}
+
+
+.dropdown-toggle::after {
+    display: none !important; /* Completely removes the default arrow */
+}
+
+.equalSizing{
+    font-size:0.9rem;
+    margin-left: 0.4rem;
+    font-weight:600;
+    box-shadow: 0 6px 5px -5px rgba(145, 181, 215, 0.3);
+
+
+
+}
+
+
+.dropDownIcons{
+    margin-right:5px;
+    
+}
+
+.offcanvas {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(10px);               /* Blurring effect */
+    -webkit-backdrop-filter: blur(10px);       /* Safari support */
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Optional: subtle border */
+  }
+  
+
+  .sideBarLi{
+    font-size:1rem;
+    padding:2px 5px;
+  }
+  .navbar button:focus,
+  .navbar button:focus-visible {
+    outline: 1px solid white;
+    box-shadow: none;
+  }
+  
+
+.nav-item, .nav-link{
+    color:white !important;
+}
